@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: kube-app-pod
+  labels:
+    app: kube-app
+spec:
+  containers:
+  - name: kube-app
+    imagePullPolicy: IfNotPresent
+    image: k8s-example/kub-app:latest
+    ports:
+    - containerPort: 8081
