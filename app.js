@@ -8,7 +8,7 @@ const app = express()
 app.get('/', (req, res) => {
     res.jsonp({
         message: "Hello World!",
-        version: "1.0.0",
+        version: "2.0.0",
         Hostname: os.hostname(),
         "IP Address": ip.address()
     })
